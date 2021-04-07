@@ -41,7 +41,7 @@ object Tostas {
         inflate(context,layout, textView, message,time)
     }
 
-    fun inflate(context: Context,layout: Int, textView: Int, message:String, time: Int){
+    private fun inflate(context: Context,layout: Int, textView: Int, message:String, time: Int){
         val view: View = LayoutInflater.from(context).inflate(layout, null)
         val toastTextView = view.findViewById(textView) as TextView
         toastTextView.text = message
