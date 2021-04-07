@@ -1,36 +1,50 @@
 package com.example.tostas
 
 import android.content.Context
-import android.os.CountDownTimer
-import android.os.Handler
+import android.graphics.drawable.Drawable
+import android.view.LayoutInflater
+import android.view.View
 import android.widget.Toast
+
 
 object Tostas {
     @JvmStatic
-    fun error(context: Context, message: String, time: Long) {
-        val toast: Toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
+    fun error(context: Context, message: String, time: Int) {
+        val view: View = LayoutInflater.from(context).inflate(R.layout.toast_layout_error, null)
+        val toast = Toast.makeText(context, message, time)
+        toast.duration = time
+        toast.view = view
         toast.show()
-        Handler().postDelayed(Runnable { toast.cancel() }, time)
     }
 
     @JvmStatic
-    fun success(context: Context, message: String, time: Long) {
-        val toast: Toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
+    fun success(context: Context, message: String, time: Int) {
+        val view: View = LayoutInflater.from(context).inflate(R.layout.toast_layout_success, null)
+        val toast = Toast.makeText(context, message, time)
+        toast.duration = time
+        toast.view = view
         toast.show()
-        Handler().postDelayed(Runnable { toast.cancel() }, time)
     }
 
     @JvmStatic
-    fun info(context: Context, message: String, time: Long) {
-        val toast: Toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
+    fun info(context: Context, message: String, time: Int) {
+        val view: View = LayoutInflater.from(context).inflate(R.layout.toast_layout_info, null)
+        val toast = Toast.makeText(context, message, time)
+        toast.duration = time
+        toast.view = view
         toast.show()
-        Handler().postDelayed(Runnable { toast.cancel() }, time)
     }
 
     @JvmStatic
-    fun warn(context: Context, message: String, time: Long) {
-        val toast: Toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
+    fun warn(context: Context, message: String, time: Int) {
+        val view: View = LayoutInflater.from(context).inflate(R.layout.toast_layout_warn, null)
+        val toast = Toast.makeText(context, message, time)
+        toast.duration = time
+        toast.view = view
         toast.show()
-        Handler().postDelayed(Runnable { toast.cancel() }, time)
+    }
+
+    fun custom(context: Context, message: String, time: Int, icon: Drawable){
+
     }
 }
