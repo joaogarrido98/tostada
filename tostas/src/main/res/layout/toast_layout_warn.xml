@@ -14,6 +14,8 @@
         android:src="@drawable/warn"/>
 
     <TextView
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:padding="5dp"
         android:id="@+id/custom_warn"
         android:layout_width="wrap_content"

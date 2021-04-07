@@ -16,6 +16,8 @@
 
     <TextView
         android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/custom_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
