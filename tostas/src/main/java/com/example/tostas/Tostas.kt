@@ -17,6 +17,7 @@ object Tostas {
                 toast.cancel()
             }
         }
+        toast.show()
         toastCountDown.start()
     }
 
@@ -32,6 +33,7 @@ object Tostas {
                 toast.cancel()
             }
         }
+        toast.show()
         toastCountDown.start()
     }
 
@@ -47,6 +49,7 @@ object Tostas {
                 toast.cancel()
             }
         }
+        toast.show()
         toastCountDown.start()
     }
 
@@ -62,6 +65,7 @@ object Tostas {
                 toast.cancel()
             }
         }
+        toast.show()
         toastCountDown.start()
     }
 }
