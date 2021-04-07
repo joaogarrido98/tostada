@@ -1,10 +1,10 @@
-package com.example.torrada
+package com.example.tostas
 
 import android.content.Context
 import android.os.CountDownTimer
 import android.widget.Toast
 
-object Torrada {
+object Tostas {
     @JvmStatic
     fun error(context: Context, message: String, time: Long) {
         val toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
