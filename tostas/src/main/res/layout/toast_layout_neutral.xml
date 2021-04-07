@@ -4,23 +4,16 @@
     android:layout_height="match_parent"
     android:id="@+id/custom_toast_layout"
     android:orientation="horizontal"
-    android:background="#f44336"
-    android:padding="5dp"
+    android:background="#7F7F7F"
     android:elevation="4dp"
+    android:padding="5dp"
     >
-
-    <ImageView
-        android:padding="5dp"
-        android:id="@+id/custom_toast_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/error"/>
 
     <TextView
         android:padding="5dp"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:id="@+id/custom_error"
+        android:id="@+id/custom_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="To"/>

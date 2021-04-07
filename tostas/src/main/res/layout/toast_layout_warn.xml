@@ -5,7 +5,7 @@
     android:id="@+id/custom_toast_layout"
     android:orientation="horizontal"
     android:padding="5dp"
-    android:elevation="6dp"
+    android:elevation="4dp"
     android:background="#ff9800">
 
     <ImageView

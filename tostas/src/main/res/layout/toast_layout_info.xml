@@ -5,7 +5,7 @@
     android:id="@+id/custom_toast_layout"
     android:orientation="horizontal"
     android:background="#2196f3"
-    android:elevation="6dp"
+    android:elevation="4dp"
     android:padding="5dp"
     >
 
@@ -14,7 +14,7 @@
         android:id="@+id/custom_toast_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/info"/>
+        android:src="@drawable/info_circle"/>
 
     <TextView
         android:padding="5dp"
