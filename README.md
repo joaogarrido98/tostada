@@ -29,6 +29,7 @@ dependencies {
 
 # Usage
 This is a step by step of how to use it.
+
 Time can be either
 ```kotlin 
 Toast.LENGTH_LONG
