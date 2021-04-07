@@ -10,6 +10,8 @@
 
     <ImageView
         android:padding="5dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="5dp"
         android:id="@+id/custom_toast_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
