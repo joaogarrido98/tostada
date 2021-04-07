@@ -9,6 +9,11 @@ import android.widget.Toast
 
 object Tostas {
     @JvmStatic
+    fun neutral(context: Context, message: String, time: Int) {
+        Toast.makeText(context, message, time).show()
+    }
+
+    @JvmStatic
     fun error(context: Context, message: String, time: Int) {
         val view: View = LayoutInflater.from(context).inflate(R.layout.toast_layout_error, null)
         val toastTextView = view.findViewById(R.id.custom_error) as TextView
