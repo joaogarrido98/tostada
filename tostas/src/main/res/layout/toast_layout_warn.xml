@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:id="@+id/custom_toast_layout"
     android:orientation="horizontal"
+    android:padding="5dp"
+    android:elevation="8dp"
     android:background="#ff9800">
 
     <ImageView
