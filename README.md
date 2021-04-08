@@ -96,7 +96,7 @@ Display a neutral Toast:
 Tostas.neutral(Activity.this, "This is a neutral", Tostas.fast);
 ```
 Display a custom Toast:
-```javascript
+```java
 Drawable d = AppCompatResources.getDrawable(getActivity(), R.drawable.pink_stuff)
 Tostas.custom(Activity.this, "Custom Toast", Tostas.fast, d, "#FF69B4");
 ```
