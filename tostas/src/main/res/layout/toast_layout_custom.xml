@@ -5,8 +5,9 @@
     android:id="@+id/custom_toast_layout"
     android:orientation="horizontal"
     android:elevation="4dp"
-    android:padding="5dp"
-    >
+    android:gravity="center_vertical"
+    android:background="@drawable/pill_custom"
+    android:padding="5dp">
 
     <ImageView
         android:padding="5dp"

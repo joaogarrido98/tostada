@@ -8,12 +8,13 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.content.res.AppCompatResources
 
 
 object Tostas {
 
-    const val fast : Int = Toast.LENGTH_SHORT
-    const val slow : Int = Toast.LENGTH_LONG
+    const val fast: Int = Toast.LENGTH_SHORT
+    const val slow: Int = Toast.LENGTH_LONG
 
     @JvmStatic
     fun neutral(context: Context, message: String, time: Int) {
@@ -22,50 +23,40 @@ object Tostas {
 
     @JvmStatic
     fun error(context: Context, message: String, time: Int) {
-        val layout = R.layout.toast_layout_error
-        val textView = R.id.custom_error
-        inflate(context,layout, textView, message,time)
+        val d = AppCompatResources.getDrawable(context, R.drawable.error)
+        inflate(context,message,time, "#f44336", d!!)
     }
 
     @JvmStatic
     fun success(context: Context, message: String, time: Int) {
-        val layout = R.layout.toast_layout_success
-        val textView = R.id.custom_success
-        inflate(context,layout, textView, message,time)
+        val d = AppCompatResources.getDrawable(context, R.drawable.success)
+        inflate(context,message,time, "#4caf50", d!!)
     }
 
     @JvmStatic
     fun info(context: Context, message: String, time: Int) {
-        val layout = R.layout.toast_layout_info
-        val textView = R.id.custom_info
-        inflate(context,layout, textView, message,time)
+        val d = AppCompatResources.getDrawable(context, R.drawable.info_circle)
+        inflate(context,message,time, "#2196f3", d!!)
     }
 
     @JvmStatic
     fun warn(context: Context, message: String, time: Int) {
-        val layout = R.layout.toast_layout_warn
-        val textView = R.id.custom_warn
-        inflate(context,layout, textView, message,time)
+        val d = AppCompatResources.getDrawable(context, R.drawable.warn)
+        inflate(context,message,time, "#ff9800", d!!)
     }
 
     @JvmStatic
-    fun custom(context: Context, message: String,time: Int,drawable: Drawable, backgroundColor: String){
+    fun custom(context: Context, message: String, time: Int, drawable: Drawable, backgroundColor: String) {
+        inflate(context, message, time, backgroundColor, drawable)
+    }
+
+    private fun inflate(context: Context, message: String, time: Int, backgroundColor: String, drawable: Drawable) {
         val view: View = LayoutInflater.from(context).inflate(R.layout.toast_layout_custom, null)
-        view.setBackgroundColor(Color.parseColor(backgroundColor))
+        view.background.setTint(Color.parseColor(backgroundColor))
         val toastTextView = view.findViewById(R.id.custom_message) as TextView
         toastTextView.text = message
         val toastDrawable = view.findViewById(R.id.custom_toast_image) as ImageView
         toastDrawable.setImageDrawable(drawable)
-        val toast = Toast.makeText(context, message, time)
-        toast.duration = time
-        toast.view = view
-        toast.show()
-    }
-
-    private fun inflate(context: Context,layout: Int, textView: Int, message:String, time: Int){
-        val view: View = LayoutInflater.from(context).inflate(layout, null)
-        val toastTextView = view.findViewById(textView) as TextView
-        toastTextView.text = message
         val toast = Toast.makeText(context, message, time)
         toast.duration = time
         toast.view = view
