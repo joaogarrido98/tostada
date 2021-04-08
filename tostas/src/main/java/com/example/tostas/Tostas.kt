@@ -11,6 +11,10 @@ import android.widget.Toast
 
 
 object Tostas {
+
+    const val fast : Int = Toast.LENGTH_SHORT
+    const val slow : Int = Toast.LENGTH_LONG
+
     @JvmStatic
     fun neutral(context: Context, message: String, time: Int) {
         Toast.makeText(context, message, time).show()
