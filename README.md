@@ -59,6 +59,15 @@ Display an warn Toast:
 ```kotlin
 Tostas.warn(this, "This is a warning", Toast.LENGTH_SHORT)
 ```
+Display a neutral Toast:
+```kotlin
+Tostas.neutral(this, "This is a neutral", Toast.LENGTH_SHORT)
+```
+Display a custom Toast:
+```kotlin
+val d = AppCompatResources.getDrawable(this, R.drawable.pink_stuff)
+Tostas.custom(this, "Custom Toast", Toast.LENGTH_LONG, d!!, "#FF69B4")
+```
 
 ## Java
 
@@ -80,4 +89,14 @@ Tostas.success(Activity.this, "This is a success", Toast.LENGTH_LONG);
 Display an warn Toast:
 ```java
 Tostas.warn(Activity.this, "This is a warning", Toast.LENGTH_SHORT);
+```
+
+Display a neutral Toast:
+```kotlin
+Tostas.neutral(Activity.this, "This is a neutral", Toast.LENGTH_SHORT);
+```
+Display a custom Toast:
+```kotlin
+Drawable d = AppCompatResources.getDrawable(getActivity(), R.drawable.pink_stuff)
+Tostas.custom(Activity.this, "Custom Toast", Toast.LENGTH_LONG, d, "#FF69B4");
 ```
