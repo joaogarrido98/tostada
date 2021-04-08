@@ -92,11 +92,11 @@ Tostas.warn(Activity.this, "This is a warning", Tostas.fast);
 ```
 
 Display a neutral Toast:
-```kotlin
+```java
 Tostas.neutral(Activity.this, "This is a neutral", Tostas.fast);
 ```
 Display a custom Toast:
-```kotlin
+```javascript
 Drawable d = AppCompatResources.getDrawable(getActivity(), R.drawable.pink_stuff)
 Tostas.custom(Activity.this, "Custom Toast", Tostas.fast, d, "#FF69B4");
 ```
