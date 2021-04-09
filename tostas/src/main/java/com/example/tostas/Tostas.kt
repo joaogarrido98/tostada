@@ -12,7 +12,6 @@ import androidx.appcompat.content.res.AppCompatResources
 
 
 object Tostas {
-
     const val fast: Int = Toast.LENGTH_SHORT
     const val slow: Int = Toast.LENGTH_LONG
 
@@ -42,7 +41,7 @@ object Tostas {
     @JvmStatic
     fun warn(context: Context, message: String, time: Int) {
         val d = AppCompatResources.getDrawable(context, R.drawable.warn)
-        inflate(context,message,time, "#ff9800", d!!)
+        inflate(context,message,time, "#ffc107", d!!)
     }
 
     @JvmStatic
