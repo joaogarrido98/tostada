@@ -23,7 +23,7 @@ Add to your `build.gradle` module
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.joaogarrido98:tostada:1.2.0'
+	implementation 'com.github.joaogarrido98:tostada:1.2.1'
 }
 ```
 
