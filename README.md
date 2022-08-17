@@ -32,71 +32,71 @@ This is a step by step of how to use it.
 
 Time can be either
 ```kotlin 
-Tostas.fast
+Tostas.FAST
 ```
 or
 ```kotlin
-Tostas.slow
+Tostas.SLOW
 ```
 ## Kotlin
 
 Display an information Toast:
 ```kotlin
-Tostas.info(this, "This is an information", Tostas.slow)
+Tostas.info(this, "This is an information", Tostas.SLOW)
 ```
 
 Display an error Toast:
 ```kotlin
-Tostas.error(this, "This is an error", Tostas.slow)
+Tostas.error(this, "This is an error", Tostas.SLOW)
 ```
 
 Display an success Toast:
 ```kotlin
-Tostas.success(this, "This is a success", Tostas.slow)
+Tostas.success(this, "This is a success", Tostas.SLOW)
 ```
 
 Display an warn Toast:
 ```kotlin
-Tostas.warn(this, "This is a warning", Tostas.slow)
+Tostas.warn(this, "This is a warning", Tostas.SLOW)
 ```
 Display a neutral Toast:
 ```kotlin
-Tostas.neutral(this, "This is a neutral", Tostas.slow)
+Tostas.neutral(this, "This is a neutral", Tostas.SLOW)
 ```
 Display a custom Toast:
 ```kotlin
 val d = AppCompatResources.getDrawable(this, R.drawable.pink_stuff)
-Tostas.custom(this, "Custom Toast", Tostas.slow, d!!, "#FF69B4")
+Tostas.custom(this, "Custom Toast", Tostas.SLOW, d!!, "#FF69B4")
 ```
 
 ## Java
 
 Display an information Toast:
 ```java
-Tostas.info(Activity.this, "This is an information", Tostas.fast);
+Tostas.info(Activity.this, "This is an information", Tostas.FAST);
 ```
 
 Display an error Toast:
 ```java
-Tostas.error(Activity.this, "This is an error", Tostas.fast);
+Tostas.error(Activity.this, "This is an error", Tostas.FAST);
 ```
 
 Display an success Toast:
 ```Java
-Tostas.success(Activity.this, "This is a success", Tostas.fast);
+Tostas.success(Activity.this, "This is a success", Tostas.FAST);
 ```
 
 Display an warn Toast:
 ```java
-Tostas.warn(Activity.this, "This is a warning", Tostas.fast);
+Tostas.warn(Activity.this, "This is a warning", Tostas.FAST);
 ```
 
 Display a neutral Toast:
 ```java
-Tostas.neutral(Activity.this, "This is a neutral", Tostas.fast);
+Tostas.neutral(Activity.this, "This is a neutral", Tostas.FAST);
 ```
 Display a custom Toast:
 ```java
 Drawable d = AppCompatResources.getDrawable(getActivity(), R.drawable.pink_stuff)
-Tostas.custom(Activity.this, "Custom Toast", Tostas.fast, d, "#FF69B4");
+Tostas.custom(Activity.this, "Custom Toast", Tostas.FAST, d, "#FF69B4");
 ```
