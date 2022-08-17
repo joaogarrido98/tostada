@@ -7,10 +7,10 @@
 
 # Before you start
 
-Add to your `build.gradle` project
+Add to your `settings.gradle` file
 
 ```gradle
-allprojects {
+dependencyResolutionManagement {
 	repositories {
 		...
 		maven { url "https://jitpack.io" }
